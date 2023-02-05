@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    @font-face {
+        font-family: 'Open Sans';
+        src: url('fonts/opensans-light.woff2') format('woff2'),
+            url('fonts/opensans-light.woff') format('woff');
+        font-style: normal;
+        font-weight: 300;
+    }
+}
+
+
+body {
+    background-color: cornflowerblue;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+.positionCenter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#btn {
+    display: flex;
+    justify-content: center;
+}
+
+footer {
+    width: 100%;
+    bottom: 0;
+}
+
+
+/* Media Queries */
+/* Phones and Small Screens */
+@media screen and (max-width: 768px) {
+    #portada{
+        height: 25vh;
+    }
+}
+
+/* Medium Screens and Tablets */
+@media screen and (min-width: 768px) {
+
+    #portada {
+        padding: 50px;
+    }
+    #personajes {
+        padding: 50px;
+    }
+}
+
+/* Laptops and Large Screens */
+@media screen and (min-width: 1200px) {
+
+    #portada,
+    #personajes {
+        padding: 50px;
+    }
+}
+
+/* Extra Large Screens */
+@media screen and (min-width: 1528px) {
+
+    #portada,
+    #personajes {
+        padding: 50px;
+    }
+}
